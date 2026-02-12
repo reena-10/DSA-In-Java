@@ -41,8 +41,18 @@ public class PatternsPrograms {
   //Print inverse left triangle Pattern
   System.out.println("Inverse Left angle triangle");
   for(int i=1;i<=n;i++){
-    for(int j=i;j<=n;j++){
+    for(int j=n;j>=i;j--){
        System.out.print("@ ");
+    }
+    System.out.println();
+  }
+  System.out.println();
+
+  //Print inverse Number left triangle Pattern
+  System.out.println("Inverse Left angle triangle");
+  for(int i=1;i<=n;i++){
+    for(int j=1;j<=n+1-i;j++){
+       System.out.print(j+" ");
     }
     System.out.println();
   }
@@ -140,8 +150,30 @@ for(int i=1; i<=n;i++){
   }
   System.out.println();
 }
+//Hollow Rectangle
+System.out.println("Hollow Rectangle Pattern");
+ for(int i=1;i<=n;i++){
+  for (int j=1;j<=m;j++){
+    if(i==1||i==n||j==1||j==n){
+      System.out.print("*");
+    }else{
+      System.out.print("  ");
+    }
+  }
+System.out.println();
+ }
 
-
+ //floyd's triangle
+ int a=1;
+ for(int i=1; i<=n; i++){
+  for(int j=1; j<=i;j++){
+    System.out.print(a+" ");
+    a++;
+  }
+  System.out.println();
+ }
+ //Binary Triangles
+ 
   sc.close();
   }
 }
